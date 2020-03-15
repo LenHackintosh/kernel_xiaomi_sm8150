@@ -11,3 +11,4 @@ ipat-$(CONFIG_IPA_EMULATION) += ipa_dt_replacement.o
 obj-$(CONFIG_RMNET_IPA3) += rmnet_ipa.o ipa_qmi_service_v01.o ipa_qmi_service.o rmnet_ipa_fd_ioctl.o
 
 obj-$(CONFIG_IPA3_MHI_PROXY) += ipa_mhi_proxy.o
+ccflags-y += -DCONFIG_DEBUG_FS
